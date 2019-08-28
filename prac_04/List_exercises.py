@@ -1,5 +1,13 @@
 def main():
-
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+    username = input("What is your username?: ")
+    if username in usernames:
+        print("Access Granted")
+    else:
+        print("Access Denied")
+        exit()
     numbers = []
     input_amount = 5
     for i in range(1, input_amount + 1):
