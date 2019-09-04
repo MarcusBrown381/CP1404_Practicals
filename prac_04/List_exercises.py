@@ -7,7 +7,6 @@ def main():
         print("Access Granted")
     else:
         print("Access Denied")
-        exit()
     numbers = []
     input_amount = 5
     for i in range(1, input_amount + 1):
