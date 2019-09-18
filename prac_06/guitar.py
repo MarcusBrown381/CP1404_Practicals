@@ -1,9 +1,9 @@
 class Guitar:
 
     def __init__(self, name, year, cost):
-        self.name = name
-        self.year = year
-        self.cost = cost
+        self.name = ""
+        self.year = 0
+        self.cost = 0
 
     def __str__(self):
         return "{}, ({}), : , {}".format(self.name, self.year, self.cost)
@@ -12,4 +12,4 @@ class Guitar:
         return 2019 - self.year
 
     def is_vintage(self):
-        if
+        return self.get_age() >= 50
