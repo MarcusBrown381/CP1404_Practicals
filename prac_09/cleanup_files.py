@@ -20,6 +20,9 @@ def main():
 
 def get_fixed_filename(filename):
     new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    for character in enumerate(new_name):
+        if character[1].islower() and
+            print(character)
     return new_name
 
 
