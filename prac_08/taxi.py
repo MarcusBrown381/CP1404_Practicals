@@ -4,7 +4,7 @@ from prac_08.car import Car
 
 class Taxi(Car):
 
-    price_per_km = 1.23
+    price_per_km = 1.20
 
     def __init__(self, name, fuel):
         super().__init__(name, fuel)
@@ -16,7 +16,7 @@ class Taxi(Car):
                                                              self.price_per_km)
 
     def get_fare(self):
-        return self.price_per_km * self.current_fare_distance
+        return round(self.price_per_km * self.current_fare_distance, 1)
 
     def start_fare(self):
         self.current_fare_distance = 0
